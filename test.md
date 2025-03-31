@@ -1,6 +1,6 @@
 ---
 title: My First Page
-layout: default
+layout: base
 ---
 
 This is the content of my page

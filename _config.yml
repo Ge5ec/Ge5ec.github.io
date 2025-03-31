@@ -30,10 +30,15 @@ github_username:  jekyll
 
 # Build settings
 #theme: jekyll-dash
-remote_theme: bitbrain/jekyll-dash
+theme: hacked-jekyll
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - test.md
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
