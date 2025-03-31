@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: GeSec\: Geelong Cybersecurity Club
+title: "GeSec: Geelong Cybersecurity Club"
 email: admin@gesec.io
 description: >- # this means to ignore newlines until "baseurl:"
   Geelong Cyber Security Club
