@@ -1,5 +1,7 @@
 - key: name
   value: GeSec - Geelong Cyber Security Club
-- key: description
-  value: GeSec runs weekly workshops covering IT security topics, emphasisng practical skills by solving technical security challenges (i.e. Capture The Flag).
-  value: test
+- key: Description
+  value:
+    - Hello!
+    - This tiny website
+    - Looks like JSON
