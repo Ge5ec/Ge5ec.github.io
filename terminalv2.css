@@ -1,6 +1,6 @@
 body {
-    background-color: #000; /* Black background */
-    font-family: 'DejaVu Sans Mono', monospace; /* Kali's default font */
+    background-color: #000;
+    font-family: 'DejaVu Sans Mono', monospace;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -8,11 +8,10 @@ body {
     min-height: 100vh;
 }
 
-/* Terminal window */
 .terminal {
-    background-color: #1e1e1e; /* Darker terminal background */
-    color: #e0e0e0; /* Light gray text */
-    border: 1px solid #3a3a3a; /* Dark gray border */
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #3a3a3a;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     width: 80%;
@@ -24,9 +23,8 @@ body {
     overflow: hidden;
 }
 
-/* Terminal header */
 .terminal-header {
-    background-color: #282828; /* Darker header */
+    background-color: #282828;
     padding: 8px;
     display: flex;
     justify-content: space-between;
@@ -36,10 +34,9 @@ body {
 
 .terminal-title {
     font-size: 14px;
-    color: #dcdcdc; /* Lighter gray header text */
+    color: #dcdcdc;
 }
 
-/* Terminal buttons */
 .terminal-buttons {
     display: flex;
 }
@@ -53,30 +50,29 @@ body {
 }
 
 .terminal-button.close {
-    background-color: #ef5350; /* Red close button */
+    background-color: #ef5350;
 }
 
 .terminal-button.minimize {
-    background-color: #ffca28; /* Yellow minimize button */
+    background-color: #ffca28;
 }
 
 .terminal-button.maximize {
-    background-color: #66bb6a; /* Green maximize button */
+    background-color: #66bb6a;
 }
 
-/* Terminal body */
 .terminal-body {
     padding: 12px;
-    overflow: hidden;
+    overflow-y: auto;
     flex-grow: 1;
 }
 
 .prompt {
-    color: #1be314; /* Green prompt */
+    color: #1be314;
 }
 
 a {
-    color: #0cff03; /* Light green links */
+    color: #0cff03;
 }
 
 #cursor {
@@ -92,4 +88,47 @@ a {
     .terminal {
         height: 95%;
     }
+}
+
+.bio-image {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+    margin: 20px auto;
+    display: block;
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bio-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bio-info h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bio-section {
+    margin-bottom: 20px;
+}
+
+.bio-section h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.bio-section p, ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.bio-section ul {
+  padding-left: 20px;
 }
