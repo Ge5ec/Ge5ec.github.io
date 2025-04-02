@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeSec Terminal</title>
+    <link rel="stylesheet" href="terminal.css">
+    <style>
+        #cursor {
+            animation: blink-caret 1s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { color: transparent }
+            50% { color: #89cff0; }
+        }
+
+        .terminal {
+            height: 90%;
+            max-height: 90%;
+        }
+
+        .terminal-body {
+          overflow: hidden;
+        }
+
+
+        @media (max-width: 600px) {
+            .terminal {
+                height: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="terminal-button close"></div>
+                <div class="terminal-button minimize"></div>
+                <div class="terminal-button maximize"></div>
+            </div>
+            <div class="terminal-title">user@GeSec:~$</div>
+        </div>
+        <div class="terminal-body">
+            <p><span class="prompt">user@GeSec:~$</span> What is GeSec?</p>
+            <p>Geelong Cybersecurity Club. We run workshops on IT security topics, emphasising practical skills by solving technical security challenges (i.e. Capture The Flags).</p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> How do I join?</p>
+            <p>Reach out to GeSec by email and we’ll get back to you. Contact details below.</p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> What do I need?</p>
+            <p>A computer. Please bring your own. Windows, MacOS or Linux is acceptable.</p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> When and Where?</p>
+            <p>TBD.</p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> Contact</p>
+            <p>Email: <a href="mailto:info@gesec.io">info@gesec.io</a></p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> Code of Conduct</p>
+            <p>Be kind to each other. Don't break the law. Read the full <a href="coc.html">Code of Conduct</a>.</p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> whoami</p>
+            <p><a href="https://www.linkedin.com/in/rafael-rafi-hermann-9a68b0187/" target="_blank">Rafi Hermann</a></p>
+            <br>
+            <p><span class="prompt">user@GeSec:~$</span> <span id="cursor">_</span></p>
+        </div>
+    </div>
+</body>
+</html>

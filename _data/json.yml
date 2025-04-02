@@ -1,8 +1,0 @@
-- key: name
-  value: GeSec - Geelong Cyber Security Club
-- key: Description
-  value:
-    - Hello!
-    - This tiny website
-    - Looks like JSON
-  typed: true

@@ -1,0 +1,95 @@
+body {
+    background-color: #000; /* Black background */
+    font-family: 'DejaVu Sans Mono', monospace; /* Kali's default font */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Terminal window */
+.terminal {
+    background-color: #1e1e1e; /* Darker terminal background */
+    color: #e0e0e0; /* Light gray text */
+    border: 1px solid #3a3a3a; /* Dark gray border */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    width: 80%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Terminal header */
+.terminal-header {
+    background-color: #282828; /* Darker header */
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.terminal-title {
+    font-size: 14px;
+    color: #dcdcdc; /* Lighter gray header text */
+}
+
+/* Terminal buttons */
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+    border: 1px solid #3a3a3a;
+}
+
+.terminal-button.close {
+    background-color: #ef5350; /* Red close button */
+}
+
+.terminal-button.minimize {
+    background-color: #ffca28; /* Yellow minimize button */
+}
+
+.terminal-button.maximize {
+    background-color: #66bb6a; /* Green maximize button */
+}
+
+/* Terminal body */
+.terminal-body {
+    padding: 12px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.prompt {
+    color: #1be314; /* Green prompt */
+}
+
+a {
+    color: #0cff03; /* Light green links */
+}
+
+#cursor {
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { color: transparent }
+    50% { color: #4caf50; }
+}
+
+@media (max-width: 600px) {
+    .terminal {
+        height: 95%;
+    }
+}
